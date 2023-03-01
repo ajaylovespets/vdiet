@@ -53,7 +53,7 @@ function FlutterApp() {
           // console.log(variantJson); 
           // console.log("quantity");
           // console.log(quantity);
-          // let customAttributes = {"prescription_file":`"${urll}"`}
+          let customAttributes = {"prescription_file":`"${urll}"`}
           // console.log("customAttributes")
           // console.log(customAttributes);
           await AppmakerWebSdk.addProductToCart({ productJson, variantJson, quantity, customAttributes })
