@@ -47,16 +47,15 @@ function FlutterApp() {
           productJson = await response.json();
           const vresponse = await fetch(`https://servicereminder.el.r.appspot.com/getProdVariant?varId=${vid}`);
           variantJson = await vresponse.json();
-          console.log("productJson");
-          console.log(productJson);
-          console.log('variantJson');
-          console.log(variantJson); 
-          console.log("quantity");
-          console.log(quantity);
-          let customAttributes = {"prescription_file":`"${urll}"`}
-          console.log("customAttributes")
-          console.log(customAttributes);
-
+          // console.log("productJson");
+          // console.log(productJson);
+          // console.log('variantJson');
+          // console.log(variantJson); 
+          // console.log("quantity");
+          // console.log(quantity);
+          // let customAttributes = {"prescription_file":`"${urll}"`}
+          // console.log("customAttributes")
+          // console.log(customAttributes);
           await AppmakerWebSdk.addProductToCart({ productJson, variantJson, quantity, customAttributes })
         }
         else{
